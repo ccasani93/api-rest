@@ -46,7 +46,7 @@ public class ProductServiceImpl implements ProductService {
 		products.setPrecio(p.getPrecioProducto());
 		products.setStock(p.getStockProducto());
 		products.setIdProducto(p.getIdRequest());
-		repository.save(products);
+		repository.saveAndFlush(products);
 	}	
 
 	@Override

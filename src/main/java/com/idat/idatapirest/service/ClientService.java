@@ -7,7 +7,7 @@ import com.idat.idatapirest.dto.ClientResponseDTO;
 
 public interface ClientService {
 
-	public void guardarCliente(ClientResponseDTO c);
+	public void guardarCliente(ClientRequestDTO c);
 	public void eliminarCliente(Integer id);
 	public void editarCliente(ClientRequestDTO c);
 	public List<ClientResponseDTO> listarCliente();	

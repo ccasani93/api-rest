@@ -20,7 +20,7 @@ public class Clients {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer idCliente;
 	private String cliente;
-	private String celular;
+	private Integer celular;
 	
 	@ManyToMany(mappedBy = "clients", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
 	private List<Products> products = new ArrayList<>();
@@ -44,11 +44,11 @@ public class Clients {
 		this.cliente = cliente;
 	}
 
-	public String getCelular() {
+	public Integer getCelular() {
 		return celular;
 	}
 
-	public void setCelular(String celular) {
+	public void setCelular(Integer celular) {
 		this.celular = celular;
 	}
 

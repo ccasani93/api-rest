@@ -18,7 +18,7 @@ public class ClientServiceImpl implements ClientService {
 	private ClientRepository repository;
 
 	@Override
-	public void guardarCliente(ClientResponseDTO c) {
+	public void guardarCliente(ClientRequestDTO c) {
 		// TODO Auto-generated method stub
 		Clients clients = new Clients();
 		clients.setIdCliente(c.getIdcliente());

@@ -4,7 +4,8 @@ public class ClientRequestDTO {
 
 	private Integer idcliente;
 	private String nombrecliente;
-	private String celularcliente;
+	private Integer celularcliente;
+	
 	public Integer getIdcliente() {
 		return idcliente;
 	}
@@ -17,10 +18,10 @@ public class ClientRequestDTO {
 	public void setNombrecliente(String nombrecliente) {
 		this.nombrecliente = nombrecliente;
 	}
-	public String getCelularcliente() {
+	public Integer getCelularcliente() {
 		return celularcliente;
 	}
-	public void setCelularcliente(String celularcliente) {
+	public void setCelularcliente(Integer celularcliente) {
 		this.celularcliente = celularcliente;
 	}
 	
